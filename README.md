@@ -1,4 +1,4 @@
-# infrastructure-platform
+# nimbus
 
 Cloud infrastructure skeletons and environment patterns for the wider engineering ecosystem.
 
@@ -8,8 +8,8 @@ Provide a credible infrastructure baseline for environments, networking, and clu
 
 ## Ecosystem role
 
-- Runtime substrate for `master-platform`, `saas-platform`, and `ai-platform`
-- Upstream to `observability-stack` and `security-platform`
+- Runtime substrate for `orbit`, `saas-platform`, and `synapse`
+- Upstream to `beacon` and `aegis`
 - Neighbor to `devops-toolkit`
 
 ## Status
@@ -25,7 +25,7 @@ Starter infrastructure repository with Terraform module structure and environmen
 ## Structure
 
 ```text
-infrastructure-platform/
+nimbus/
 ├── docs/
 │   └── topology.md
 ├── environments/
@@ -47,9 +47,9 @@ Review topology docs, then grow environment modules from the examples in `enviro
 ## Related repositories
 
 - `devops-toolkit`
-- `observability-stack`
-- `security-platform`
-- `master-platform`
+- `beacon`
+- `aegis`
+- `orbit`
 
 ## Future direction
 
