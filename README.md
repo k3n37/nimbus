@@ -8,9 +8,9 @@ Provide a credible infrastructure baseline for environments, networking, and clu
 
 ## Ecosystem role
 
-- Runtime substrate for `orbit`, `saas-platform`, and `synapse`
+- Runtime substrate for `orbit`, `summit`, and `synapse`
 - Upstream to `beacon` and `aegis`
-- Neighbor to `devops-toolkit`
+- Neighbor to `anvil`
 
 ## Status
 
@@ -46,7 +46,7 @@ Review topology docs, then grow environment modules from the examples in `enviro
 
 ## Related repositories
 
-- `devops-toolkit`
+- `anvil`
 - `beacon`
 - `aegis`
 - `orbit`
