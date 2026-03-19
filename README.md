@@ -1,56 +1,34 @@
 # nimbus
 
-Cloud infrastructure skeletons and environment patterns for the wider engineering ecosystem.
+## Purpose
+Provide the infrastructure layer where systems run: environments, networking, and container-oriented runtime foundations.
 
-## Mission
+## Why it matters
+When infrastructure is improvised, deployment drift, insecure defaults, and fragile environments undermine everything above it.
 
-Provide a credible infrastructure baseline for environments, networking, and cluster-adjacent platform concerns.
+## Scope
+This repo focuses on environment composition, network structure, and infrastructure starters. It does not try to model every cloud service or deployment pattern.
 
-## Ecosystem role
+## System Role
+`nimbus` is the infrastructure and cloud layer for the ecosystem. It gives runtime repos a stable place to land and operate.
 
-- Runtime substrate for `orbit`, `summit`, and `synapse`
-- Upstream to `beacon` and `aegis`
-- Neighbor to `anvil`
+## System Connections
+- Depends on: architecture direction from `atlas` and delivery workflows from `runway`.
+- Feeds into: runtime systems across the portfolio.
+- Interacts with: `runway`, `beacon`, `signal`, `aegis`.
 
-## Status
+## Core Concepts
+- environment layout
+- network boundaries
+- runtime provisioning
+- container readiness
+- infrastructure reuse
 
-Starter infrastructure repository with Terraform module structure and environment composition notes.
+## Minimal Artifact
+`environments/staging/main.tf`, `modules/network/main.tf`, and `docs/topology.md` provide the starter infrastructure baseline.
 
-## Tech stack
+## Notes
+The goal is a practical environment shape that other repos can rely on, not an oversized module catalog.
 
-- Terraform
-- Kubernetes YAML examples
-- Markdown
-
-## Structure
-
-```text
-nimbus/
-├── docs/
-│   └── topology.md
-├── environments/
-│   └── staging/
-│       └── main.tf
-├── modules/
-│   └── network/
-│       └── main.tf
-├── .editorconfig
-├── .gitignore
-├── README.md
-└── ROADMAP.md
-```
-
-## Getting started
-
-Review topology docs, then grow environment modules from the examples in `environments/`.
-
-## Related repositories
-
-- `anvil`
-- `beacon`
-- `aegis`
-- `orbit`
-
-## Future direction
-
-Stay cloud-pragmatic and environment-focused instead of turning the repo into an overbuilt module graveyard.
+## Next Steps
+Add service deployment patterns, secret references, and environment promotion structure.
